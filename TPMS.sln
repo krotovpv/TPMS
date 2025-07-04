@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPMS_WF", "TPMS_WF\TPMS_WF.csproj", "{F5354487-CBE8-4E45-9135-4515E69F3A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPMS_WPF", "TPMS_WPF\TPMS_WPF.csproj", "{BECA1942-30B2-4ADC-AB83-93060052281A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5354487-CBE8-4E45-9135-4515E69F3A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5354487-CBE8-4E45-9135-4515E69F3A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5354487-CBE8-4E45-9135-4515E69F3A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5354487-CBE8-4E45-9135-4515E69F3A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECA1942-30B2-4ADC-AB83-93060052281A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECA1942-30B2-4ADC-AB83-93060052281A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECA1942-30B2-4ADC-AB83-93060052281A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECA1942-30B2-4ADC-AB83-93060052281A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24DF804D-5DFF-4F5A-AD19-CB51CDD12A5B}
+	EndGlobalSection
+EndGlobal
