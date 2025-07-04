@@ -19,10 +19,7 @@ namespace TPMS_WF
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //pictureBoxMain.Controls.Add(label1);
-            //pictureBoxMain.Controls.Add(label2);
-            //pictureBoxMain.Controls.Add(label3);
-            //pictureBoxMain.Controls.Add(label4);
+            
         }
     }
 }
