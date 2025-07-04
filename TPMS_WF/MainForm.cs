@@ -36,7 +36,7 @@ namespace TPMS_WF
             {
                 tcpClient = new TcpClient();
                 //tcpClient.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
-                tcpClient.Connect("127.0.0.1", 23);
+                tcpClient.Connect("192.168.0.7", 23);
                 stream = tcpClient.GetStream();
                 ReadData();
             }
