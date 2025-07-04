@@ -34,10 +34,10 @@
             this.lblBackLeftPressure = new System.Windows.Forms.Label();
             this.lblBackRightPressure = new System.Windows.Forms.Label();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblFrontLeftTemperature = new System.Windows.Forms.Label();
+            this.lblBackLeftTemperature = new System.Windows.Forms.Label();
+            this.lblFrontRightTemperature = new System.Windows.Forms.Label();
+            this.lblBackRightTemperature = new System.Windows.Forms.Label();
             this.btnFrontLeftTireHistory = new System.Windows.Forms.Button();
             this.btnBackLeftTireHistory = new System.Windows.Forms.Button();
             this.btnFrontRightTireHistory = new System.Windows.Forms.Button();
@@ -88,52 +88,52 @@
             // pictureBoxMain
             // 
             this.pictureBoxMain.Image = global::TPMS_WF.Properties.Resources.carWithTire;
-            this.pictureBoxMain.Location = new System.Drawing.Point(106, 13);
+            this.pictureBoxMain.Location = new System.Drawing.Point(135, 13);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(548, 498);
+            this.pictureBoxMain.Size = new System.Drawing.Size(495, 498);
             this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMain.TabIndex = 0;
             this.pictureBoxMain.TabStop = false;
             // 
-            // label1
+            // lblFrontLeftTemperature
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(23, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "-- °С";
+            this.lblFrontLeftTemperature.AutoSize = true;
+            this.lblFrontLeftTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFrontLeftTemperature.Location = new System.Drawing.Point(23, 134);
+            this.lblFrontLeftTemperature.Name = "lblFrontLeftTemperature";
+            this.lblFrontLeftTemperature.Size = new System.Drawing.Size(55, 25);
+            this.lblFrontLeftTemperature.TabIndex = 5;
+            this.lblFrontLeftTemperature.Text = "-- °С";
             // 
-            // label2
+            // lblBackLeftTemperature
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(23, 393);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "-- °С";
+            this.lblBackLeftTemperature.AutoSize = true;
+            this.lblBackLeftTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBackLeftTemperature.Location = new System.Drawing.Point(23, 393);
+            this.lblBackLeftTemperature.Name = "lblBackLeftTemperature";
+            this.lblBackLeftTemperature.Size = new System.Drawing.Size(55, 25);
+            this.lblBackLeftTemperature.TabIndex = 6;
+            this.lblBackLeftTemperature.Text = "-- °С";
             // 
-            // label3
+            // lblFrontRightTemperature
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(660, 134);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "-- °С";
+            this.lblFrontRightTemperature.AutoSize = true;
+            this.lblFrontRightTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFrontRightTemperature.Location = new System.Drawing.Point(660, 134);
+            this.lblFrontRightTemperature.Name = "lblFrontRightTemperature";
+            this.lblFrontRightTemperature.Size = new System.Drawing.Size(55, 25);
+            this.lblFrontRightTemperature.TabIndex = 7;
+            this.lblFrontRightTemperature.Text = "-- °С";
             // 
-            // label4
+            // lblBackRightTemperature
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(660, 393);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "-- °С";
+            this.lblBackRightTemperature.AutoSize = true;
+            this.lblBackRightTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBackRightTemperature.Location = new System.Drawing.Point(660, 393);
+            this.lblBackRightTemperature.Name = "lblBackRightTemperature";
+            this.lblBackRightTemperature.Size = new System.Drawing.Size(55, 25);
+            this.lblBackRightTemperature.TabIndex = 8;
+            this.lblBackRightTemperature.Text = "-- °С";
             // 
             // btnFrontLeftTireHistory
             // 
@@ -181,18 +181,22 @@
             this.Controls.Add(this.btnBackLeftTireHistory);
             this.Controls.Add(this.btnFrontLeftTireHistory);
             this.Controls.Add(this.pictureBoxMain);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblBackRightTemperature);
             this.Controls.Add(this.lblFrontLeftPressure);
             this.Controls.Add(this.lblBackRightPressure);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFrontRightTemperature);
+            this.Controls.Add(this.lblFrontLeftTemperature);
             this.Controls.Add(this.lblFrontRightPressure);
             this.Controls.Add(this.lblBackLeftPressure);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblBackLeftTemperature);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.Text = "TPMS";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,10 +210,10 @@
         private System.Windows.Forms.Label lblFrontRightPressure;
         private System.Windows.Forms.Label lblBackLeftPressure;
         private System.Windows.Forms.Label lblBackRightPressure;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblFrontLeftTemperature;
+        private System.Windows.Forms.Label lblBackLeftTemperature;
+        private System.Windows.Forms.Label lblFrontRightTemperature;
+        private System.Windows.Forms.Label lblBackRightTemperature;
         private System.Windows.Forms.Button btnFrontLeftTireHistory;
         private System.Windows.Forms.Button btnBackLeftTireHistory;
         private System.Windows.Forms.Button btnFrontRightTireHistory;

@@ -2,9 +2,9 @@
 {
     public enum ETypeTire
     {
-        FrontLeft = 0,
-        FrontRight = 1,
-        BackLeft = 2,
-        BackRight = 3
+        FrontLeft = 1,
+        FrontRight = 2,
+        BackLeft = 3,
+        BackRight = 4
     }
 }

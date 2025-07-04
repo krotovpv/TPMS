@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ETypeTire.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="HistoryData.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

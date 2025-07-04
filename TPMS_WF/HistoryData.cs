@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TPMS_WF
 {
     public class HistoryData
     {
-        public DateTime DateTime { get; set; }
-        public string Pressure { get; set; }
-        public string Temperature { get; set; }
-        public ETypeTire TypeTire { get; set; }
+        public DateTime DateTime { get; }
+        public string Pressure { get; }
+        public string Temperature { get; }
+        public ETypeTire TypeTire { get; }
 
-        public static readonly List<HistoryData> History = new List<HistoryData>();
+        private static readonly List<HistoryData> History = new List<HistoryData>();
 
         public HistoryData(string pressure, string temperature, ETypeTire typeTire)
         {
@@ -19,6 +20,11 @@ namespace TPMS_WF
             Temperature = temperature;
             TypeTire = typeTire;
             History.Add(this);
+        }
+
+        public HistoryData[] GetHistory(ETypeTire typeTire)
+        {
+            return History.Where(x => x.TypeTire == typeTire).ToArray();
         }
     }
 }
