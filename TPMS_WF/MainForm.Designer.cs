@@ -143,6 +143,7 @@
             this.btnFrontLeftTireHistory.TabIndex = 9;
             this.btnFrontLeftTireHistory.Text = "История";
             this.btnFrontLeftTireHistory.UseVisualStyleBackColor = true;
+            this.btnFrontLeftTireHistory.Click += new System.EventHandler(this.btnFrontLeftTireHistory_Click);
             // 
             // btnBackLeftTireHistory
             // 
@@ -152,6 +153,7 @@
             this.btnBackLeftTireHistory.TabIndex = 10;
             this.btnBackLeftTireHistory.Text = "История";
             this.btnBackLeftTireHistory.UseVisualStyleBackColor = true;
+            this.btnBackLeftTireHistory.Click += new System.EventHandler(this.btnBackLeftTireHistory_Click);
             // 
             // btnFrontRightTireHistory
             // 
@@ -161,6 +163,7 @@
             this.btnFrontRightTireHistory.TabIndex = 11;
             this.btnFrontRightTireHistory.Text = "История";
             this.btnFrontRightTireHistory.UseVisualStyleBackColor = true;
+            this.btnFrontRightTireHistory.Click += new System.EventHandler(this.btnFrontRightTireHistory_Click);
             // 
             // btnBackRightTireHistory
             // 
@@ -170,6 +173,7 @@
             this.btnBackRightTireHistory.TabIndex = 12;
             this.btnBackRightTireHistory.Text = "История";
             this.btnBackRightTireHistory.UseVisualStyleBackColor = true;
+            this.btnBackRightTireHistory.Click += new System.EventHandler(this.btnBackRightTireHistory_Click);
             // 
             // MainForm
             // 

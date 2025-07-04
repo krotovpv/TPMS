@@ -22,7 +22,7 @@ namespace TPMS_WF
             History.Add(this);
         }
 
-        public HistoryData[] GetHistory(ETypeTire typeTire)
+        public static HistoryData[] GetHistory(ETypeTire typeTire)
         {
             return History.Where(x => x.TypeTire == typeTire).ToArray();
         }

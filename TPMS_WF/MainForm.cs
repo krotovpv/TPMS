@@ -123,5 +123,25 @@ namespace TPMS_WF
             if (tcpClient?.Connected == true)
                 tcpClient.Close();
         }
+
+        private void btnFrontLeftTireHistory_Click(object sender, EventArgs e)
+        {
+            new HistoryForm(HistoryData.GetHistory(ETypeTire.FrontLeft)).Show();
+        }
+
+        private void btnFrontRightTireHistory_Click(object sender, EventArgs e)
+        {
+            new HistoryForm(HistoryData.GetHistory(ETypeTire.FrontRight)).Show();
+        }
+
+        private void btnBackLeftTireHistory_Click(object sender, EventArgs e)
+        {
+            new HistoryForm(HistoryData.GetHistory(ETypeTire.BackLeft)).Show();
+        }
+
+        private void btnBackRightTireHistory_Click(object sender, EventArgs e)
+        {
+            new HistoryForm(HistoryData.GetHistory(ETypeTire.BackRight)).Show();
+        }
     }
 }
