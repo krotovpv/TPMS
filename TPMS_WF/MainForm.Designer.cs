@@ -1,6 +1,6 @@
 ﻿namespace TPMS_WF
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.lblFrontLeftPressure = new System.Windows.Forms.Label();
             this.lblFrontRightPressure = new System.Windows.Forms.Label();
             this.lblBackLeftPressure = new System.Windows.Forms.Label();
@@ -170,7 +171,7 @@
             this.btnBackRightTireHistory.Text = "История";
             this.btnBackRightTireHistory.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +189,8 @@
             this.Controls.Add(this.lblFrontRightPressure);
             this.Controls.Add(this.lblBackLeftPressure);
             this.Controls.Add(this.label2);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
             this.Text = "TPMS";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
