@@ -2,29 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TPMS_WF
+namespace TPMS_WF2
 {
-    public class HistoryData
+    internal class HistoryData
     {
         public DateTime DateTime { get; }
         public string Pressure { get; }
         public string Temperature { get; }
-        public ETypeTire TypeTire { get; }
+        public string Number { get; }
+        public short Code { get; }
 
         private static readonly List<HistoryData> History = new List<HistoryData>();
 
-        public HistoryData(string pressure, string temperature, ETypeTire typeTire)
+        public HistoryData(string pressure, string temperature, string number, short code)
         {
             DateTime = DateTime.Now;
             Pressure = pressure;
             Temperature = temperature;
-            TypeTire = typeTire;
+            Number = number;
+            Code = code;
             History.Add(this);
         }
 
-        public static HistoryData[] GetHistory(ETypeTire typeTire)
+        public static HistoryData[] GetHistory(string number)
         {
-            return History.Where(x => x.TypeTire == typeTire).ToArray();
+            return History.Where(x => x.Number == number).ToArray();
         }
     }
 }
