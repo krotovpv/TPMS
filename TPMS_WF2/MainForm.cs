@@ -100,5 +100,10 @@ namespace TPMS_WF2
             if (tcpClient?.Connected == true)
                 tcpClient.Close();
         }
+
+        private void dgvMain_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace TPMS_WF2
 {
-    internal class HistoryData
+    public class HistoryData
     {
         public DateTime DateTime { get; }
-        public string Pressure { get; }
-        public string Temperature { get; }
-        public string Number { get; }
-        public short Code { get; }
+        public string Pressure { get; } = string.Empty;
+        public string Temperature { get; } = string.Empty;
+        public string Number { get; } = string.Empty;
+        public short Code { get; } = 0;
 
         private static readonly List<HistoryData> History = new List<HistoryData>();
 
